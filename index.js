@@ -48,7 +48,7 @@ function removeFromCart(item) {
   let i = [];
   for(i = 0; i < cart.length; i++) {
   }
-  if(cart[i] === item) {
+  if(cart[i].itemName === item) {
   cart.splice(i, 1);
     return cart;
   } else {
@@ -62,7 +62,7 @@ function placeOrder(cardNumber) {
     for(let i = 0; i < cart.length; i++) {
       cart.pop();
     }
-      return `"Your total cost is $${getTotal()}, which will be charged to the card ${cardNumber}."`;
+      return `"Your total cost is $${total()}, which will be charged to the card ${cardNumber}."`;
     } else {
       return "Sorry, we don't have a credit card on file for you.";
     }
