@@ -50,11 +50,11 @@ function removeFromCart(item) {
     if(cart[i].itemName === item) {
   cart.splice(i, 1);
     return cart;
-    } 
+    }
   }
- 
+
     return 'That item is not in your cart.'
- 
+
 }
 // function removeFromCart(item) {
 //   //write your code here
